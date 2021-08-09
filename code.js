@@ -1,4 +1,7 @@
-var urlToFetch = "https://backend.deviantart.com/rss.xml?q=gallery:yikuans&type=deviation";
+var galleryID = (new URLSearchParams(location.search)).get("username");
+if (!galleryID) location.replace("error.txt");
+
+var urlToFetch = `https://backend.deviantart.com/rss.xml?q=gallery:${galleryID}&type=deviation`;
 
 var xhttp = new XMLHttpRequest();
 xhttp.open("GET", urlToFetch, false);
