@@ -1,5 +1,5 @@
 var galleryID = (new URLSearchParams(location.search)).get("username");
-if (!galleryID) location.replace("error.txt");
+if (!galleryID) location.replace("error.html?msg=" + encodeURIComponent("Missing param `username`"));
 
 var urlToFetch = `https://backend.deviantart.com/rss.xml?q=gallery:${galleryID}&type=deviation`;
 
