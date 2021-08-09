@@ -8,6 +8,8 @@ xhttp.open("GET", urlToFetch, false);
 xhttp.send();
 var resultDoc = xhttp.responseXML;
 
+if (resultDoc.querySelectorAll("item").length == 0) location.replace("error.html?msg=" + encodeURIComponent("No data for username `" + galleryID + "`"));
+
 var images = [];
 for (var item of resultDoc.querySelectorAll("item")) {
     images.push({
