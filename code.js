@@ -28,6 +28,7 @@ for (var item of resultDoc.querySelectorAll("item")) {
         thumb.alt = datapoint.name;
         thumb.style.width = "100%";
         thumb.style.cursor = "pointer";
+        thumb.loading = "lazy";
         thumb.addEventListener("click", new Function(`
             var a = document.createElement("a");
             a.href = "${datapoint.uri}";
