@@ -21,14 +21,7 @@ for (var item of resultDoc.querySelectorAll("item")) {
 
 (function(data) {
     var wrapper = document.querySelector("#gallery");
-    wrapper.className = "row";
-    const colheight = Math.ceil(data.length / 4);
     for (var i = 0; i < data.length; i++) {
-        if (i % colheight == 0) {
-            var rowElement = document.createElement("div");
-            rowElement.className = "column";
-            wrapper.appendChild(rowElement);
-        }
         var datapoint = data[i];
         var thumb = new Image();
         thumb.src = datapoint.thumb;
@@ -46,6 +39,6 @@ for (var item of resultDoc.querySelectorAll("item")) {
             e.preventDefault();
             this.click();
         });
-        rowElement.appendChild(thumb);
+        wrapper.appendChild(thumb);
     }
 })(images);
