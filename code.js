@@ -13,7 +13,7 @@ if (resultDoc.querySelectorAll("item").length == 0) location.replace("error.html
 var images = [];
 for (var item of resultDoc.querySelectorAll("item")) {
     images.push({
-        thumb: item.getElementsByTagName("media:thumbnail")[1].getAttribute("url"),
+        thumb: item.getElementsByTagName("media:content")[0].getAttribute("url"),
         name: item.querySelector("title").innerHTML,
         uri: item.querySelector("link").innerHTML
     });
