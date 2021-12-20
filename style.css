@@ -42,3 +42,19 @@ body {
         column-count: 1;
     }
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #696969;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #454545;
+}
