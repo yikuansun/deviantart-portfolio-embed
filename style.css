@@ -21,6 +21,7 @@ body {
     height: auto;
     margin-bottom: 5px;
     transition: filter 1s;
+    user-select: none;
 }
 
 #gallery img:hover {

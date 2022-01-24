@@ -26,6 +26,7 @@ for (var item of resultDoc.querySelectorAll("item")) {
         var thumb = new Image();
         thumb.src = datapoint.thumb;
         thumb.alt = datapoint.name;
+        thumb.setAttribute("draggable", false);
         thumb.style.width = "100%";
         thumb.style.cursor = "pointer";
         thumb.loading = "lazy";
