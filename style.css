@@ -25,7 +25,7 @@ body {
 }
 
 #gallery img:hover {
-    filter: opacity(0.69);
+    filter: opacity(0.5);
 }
 
 @media screen and (max-width: 800px) {
