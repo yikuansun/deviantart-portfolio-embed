@@ -20,7 +20,7 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 5px;
-    transition: filter 3s;
+    transition: filter 1s;
     user-select: none;
 }
 
