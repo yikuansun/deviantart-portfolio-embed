@@ -26,6 +26,7 @@ body {
 
 #gallery img:hover {
     filter: opacity(0.5);
+    cursor: zoom-in!important;
 }
 
 @media screen and (max-width: 800px) {
